@@ -1,0 +1,95 @@
+<article class="container">
+    <section>
+        <div class="d-flex bd-highlight">
+            <div class="p-2 flex-fill bd-highlight">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/images/user.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nombre del usuario</h5>
+                        <p class="card-text">Datos personales</p>
+                        <div class="row">
+                            <div class="col">
+                                <p>Nombre</p>
+                            </div>
+                            <div class="col">
+                                <p>Juan pepito perez</p>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col">
+                                <p>ID</p>
+                            </div>
+                            <div class="col">
+                                <p>115151</p>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col">
+                                <p>Edad</p>
+                            </div>
+                            <div class="col">
+                                <p>54</p>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col">
+                                <p>Fecha de nacimiento</p>
+                            </div>
+                            <div class="col">
+                                <p>1965/12/21</p>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col">
+                                <p>Telefono</p>
+                            </div>
+                            <div class="col">
+                                <p>3164646</p>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col">
+                                <p>Dirección</p>
+                            </div>
+                            <div class="col">
+                                <p>Medellin por la universidd</p>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col">
+                                <p>correo</p>
+                            </div>
+                            <div class="col">
+                                <p>sdsd@djhdjh</p>
+                            </div>
+                        </div> 
+                      <a class="btn btn-primary" routerLink="/editar">Editar</a>
+                    </div>
+                </div>
+                <div>
+                    
+                    <div class="col-12" *ngFor="let ejercicio of ejercicios">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">{{ ejercicio.nombre }}</a>
+                    </div>
+                    </div>
+                     
+
+                </div>
+            </div>
+
+            <div class="p-2 flex-fill bd-highlight">
+                <div class="card"  *ngFor="let ejercicio of ejercicios">
+                    <video [src]="ejercicio.video" class="card-img-top" width = "20%" alt="Ejercicio1"controls></video>
+                    <div class="card-body">
+                      <h5 class="card-title">{{ ejercicio.nombre }}</h5>
+                      <p class="card-text">{{ejercicio.descripcion}}</p>
+                      <a href="#" class="btn btn-primary">Siguiente</a>
+                    </div>
+                  </div>
+            </div>
+            
+            
+          </div>
+    </section>
+</article>
