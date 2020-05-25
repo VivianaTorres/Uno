@@ -11,6 +11,7 @@ const routes: Routes = [
   {path:'ingresar', component: UsuarioComponent, children:[
     {path:'editar', component: DatosComponent},
   ]},
+  { path: 'ingresar/:id', component: UsuarioComponent},
   {path:'editar', component: DatosComponent},
   { path: '**', redirectTo:'login'}
 

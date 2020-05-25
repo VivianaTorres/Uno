@@ -1,48 +1,48 @@
 [
     {
-        "_idEjercicio" : 1,
+        "id" : 1,
         "nombre" : "Ejercicio 1 ",
         "descripcion" : " Paciente boca arriba con piernas estiradas, moviliza los tobillos hacia arriba y hacia abajo",
         "repticiones" : "Realizar 3 rondas de 20 repeticiones cada una",
         "video" : "http://localhost:4200/assets/videos/DSC_0028.MOV"
     },
     {
-        "_idEjercicio" : 2,
+        "id" : 2,
         "nombre" : "Ejercicio 2",
         "descripcion" : "Paciente boca arriba con piernas extendidas, doblar la rodilla hasta 90° y estirar de nuevo",
         "repeticiones" : "Realizar 4 rondas de 10 repeticiones cada una",
         "video" : "http://localhost:4200/assets/videos/DSC_0029.MOV"
     },
     {
-        "_idEjercicio" : 4,
+        "id" : 4,
         "nombre" : "Ejercicio 4",
         "descripcion" : "Paciente boca arriba con piernas dobladas, abrir y cerrar las caderas repetidamente",
         "repeticiones" : "Realizar 4 rondas de 10 repeticiones cada una",
         "video" : "http://localhost:4200/assets/videos/DSC_0031.MOV"
     }, 
     {
-        "_idEjercicio" : 5,
+        "id" : 5,
         "nombre" : "Ejercicio 5",
         "descripcion" : "Paciente boca arriba con piernas dobladas, colocar pelota entre las rodillas, apretar la pelota sosteniendo durante 6 segundos y relajar",
         "repeticiones" : "Realizar 20 veces",
         "video" : "http://localhost:4200/assets/videos/DSC_0032.MOV"
     }, 
     {
-        "_idEjercicio" : 6,
+        "id" : 6,
         "nombre" : "Ejercicio 6",
         "descripcion" : "Paciente boca arriba colocar pelota por debajo de la pierna, apretar la pelota contra la cama durante 6 segundos y soltar",
         "repeticiones" : "Realizar 20 veces",
         "video" : "http://localhost:4200/assets/videos/DSC_0033.MOV"
     }, 
     {
-        "_idEjercicio" : 7,
+        "id" : 7,
         "nombre" : "Ejercicio 7",
         "descripcion" : "Paciente acostado sobre el lado sano con piernas estiradas, levantar la pierna y sostener 6 segundos",
         "repeticiones" : "Repetir 20 veces",
         "video" : "http://localhost:4200/assets/videos/DSC_0034.MOV"
     }, 
     {
-        "_idEjercicio" : 10,
+        "id" : 10,
         "nombre" : "Ejercicio 10",
         "descripcion" : "Paciente acostado boca arriba, con una sabana o toalla alrededor del pie, levantar la pierna totalmente estirada sin sobrepasar la cintura del paciente, sostener 20 segundos",
         "repeticiones" : "Repetir 5 veces",
