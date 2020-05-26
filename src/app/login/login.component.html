@@ -1,27 +1,65 @@
 <article class="container">
     <section class="fondo">
         <div class="col-12 col-sm-6 col-lg-4 mb-3">
+           <br>
             <form class="user border p-3">
+                
                 <div class="form-group">
                     <label for="name">Nombre completo</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Introduzca su nombre">
+                    <input id="caja1" type="password" class="caja1 form-control" placeholder="Introduzca su nombre"/>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input id="caja2" type="password" class="caja2 form-control" placeholder="Password" onkeyup="verificar2(this.value)"/>
                     <small id="emailHelp" class="form-text text-muted">Ingrese la contraseña que le dio su médico</small>
                 </div>
-                <a type="submit" class="btn btn-primary btn-lg" [routerLink]="['/ingresar']" role="button">Ingresar</a>
-                </form>
+                <a type="submit" id="btnEnviar" class="btn btn-primary btn-lg " [routerLink]="['/ingresar']" role="button">Ingresar</a>
+            </form>
+            <br>
+            <br>
+            <br>
+                
         </div>
+       
     </section>
     <section>
         <div class="jumbotron">
-            <h1 class="display-4">Empieza tu proceso de recuperación!</h1>
-            <p class="lead">La fisioterapia a distancia se pretende lograr que los tratamientos requeridos después someterse a un reemplazo articular de cadera y/o rodilla, se realicen con mayor comodidad desde el sitio de preferencia.</p>
+            
+            <!--  -->
+            <h1 class="display-5">Empieza tu proceso de recuperación!</h1>
+            <p class="lead">La fisioterapia a distancia se pretende lograr que los tratamientos requeridos después someterse a un 
+                reemplazo articular de cadera y/o rodilla, se realicen con mayor comodidad desde el sitio de preferencia.</p>
             <hr class="my-4">
-            <p>La recuperación exitosa de la movilidad en las articulaciones, no solo depende de la operación realizada, si no también, de un buen proceso de recuperación fisioterapéutico que empieza al día siguiente de ser llevada a cabo la cirugía.</p>
+            <p>La recuperación exitosa de la movilidad en las articulaciones, no solo depende de la operación realizada, si no también, 
+                de un buen proceso de recuperación fisioterapéutico que empieza al día siguiente de ser llevada a cabo la cirugía.</p>
             <a class="btn btn-primary btn-lg" href="#" role="button">Conocer mas</a>
           </div>
     </section>
 </article>
+
+
+
+
+<!-- <input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script> -->

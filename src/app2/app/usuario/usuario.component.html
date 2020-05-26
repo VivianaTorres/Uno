@@ -1,0 +1,162 @@
+<article class="container">
+    <section>
+        <div class="d-flex bd-highlight">
+            <div class="p-2 flex-fill bd-highlight">
+                <div class="card" style="width: 18rem;">
+                    <img src="/assets/images/user.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"><b>Datos personales</b></p>
+                        <div class="row">
+                            <div class="col">
+                                <p>Nombre</p>
+                            </div>
+                            <div class="col">
+                                <p>{{numberComments}}</p>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col">
+                                <p>ID</p>
+                            </div>
+                            <div class="col">
+                                <p>{{numberComments}}</p>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col">
+                                <p>Edad</p>
+                            </div>
+                            <div class="col">
+                                <p>{{numberComments}}</p>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col">
+                                <p>Fecha de nacimiento</p>
+                            </div>
+                            <div class="col">
+                                <p>{{numberComments}}</p>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col">
+                                <p>Telefono</p>
+                            </div>
+                            <div class="col">
+                                <p>{{numberComments}}</p>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col">
+                                <p>Dirección</p>
+                            </div>
+                            <div class="col">
+                                <p>{{numberComments}}</p>
+                            </div>
+                        </div> 
+                        <div class="row">
+                            <div class="col">
+                                <p>Correo</p>
+                            </div>
+                            <div class="col">
+                                <p>{{numberComments}}</p>
+                            </div>
+                        </div> 
+                      <a class="btn btn-primary" routerLink="/editar">Editar</a>
+                    </div>
+                </div>
+                <div style="width: 18rem;">
+                    <div class="span12">
+                        <table class="table-condensed table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                <th colspan="7">
+                                    <span class="btn-group">
+                                        <a class="btn"><i class="icon-chevron-left"></i></a>
+                                        <a class="btn active">Mayo 2020</a>
+                                        <a class="btn"><i class="icon-chevron-right"></i></a>
+                                    </span>
+                                </th>
+                                </tr>
+                                <tr>
+                                    <th>Su</th>
+                                    <th>Mo</th>
+                                    <th>Tu</th>
+                                    <th>We</th>
+                                    <th>Th</th>
+                                    <th>Fr</th>
+                                    <th>Sa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="muted">29</td>
+                                    <td class="muted">30</td>
+                                    <td class="muted">31</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>19</td>
+                                    <td class="btn-primary"><strong>20</strong></td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td>24</td>
+                                    <td>25</td>
+                                </tr>
+                                <tr>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td class="muted">1</td>
+                                    <td class="muted">2</td>
+                                    <td class="muted">3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <div class="p-2 flex-fill bd-highlight">
+                <div class="card-wrapper col-12 col-sm-12 col-lg-12 mb">
+                    <div id = "ejer" class="card"  *ngFor="let ejercicio of ejercicios">
+                        <video [src]="ejercicio.video" class="card-img-top" width = "20%" alt="Ejercicio1"controls></video>
+                        <div class="card-body">
+                        <a id = "siguiente" class="card-title"><h5>{{ ejercicio.nombre }}</h5></a>
+                        <p class="card-text">{{ejercicio.descripcion}}</p>
+                        <p><b>Repeticiones:</b> {{ejercicio.repeticiones }} </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+          </div>
+    </section>
+</article>
