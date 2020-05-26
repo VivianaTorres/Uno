@@ -9,6 +9,9 @@ import { LoginComponent } from './login/login.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { EjerciciosComponent } from './ejercicios/ejercicios.component';
 import { DatosComponent } from './datos/datos.component';
+import { MensajeComponent } from './mensaje/mensaje.component';
+import { InformacionComponent } from './informacion/informacion.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,11 +22,14 @@ import { DatosComponent } from './datos/datos.component';
     UsuarioComponent,
     EjerciciosComponent,
     DatosComponent,
+    MensajeComponent,
+    InformacionComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

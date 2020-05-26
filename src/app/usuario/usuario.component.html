@@ -1,5 +1,5 @@
 <article class="container">
-    <section>
+    <section *ngIf="pacientes">
         <div class="d-flex bd-highlight">
             <div class="p-2 flex-fill bd-highlight">
                 <div class="card" style="width: 18rem;">
@@ -12,7 +12,7 @@
                                 <p>Nombre</p>
                             </div>
                             <div class="col">
-                                <p></p>
+                                <p>{{pacientes.nombre}}</p>
                             </div>
                         </div> 
                         <div class="row">
@@ -20,7 +20,7 @@
                                 <p>ID</p>
                             </div>
                             <div class="col">
-                                <p></p>
+                                <p>{{pacientes.apellido}}</p>
                             </div>
                         </div> 
                         <div class="row">
@@ -28,7 +28,7 @@
                                 <p>Edad</p>
                             </div>
                             <div class="col">
-                                <p></p>
+                                <p>{{pacientes.edad}}</p>
                             </div>
                         </div> 
                         <div class="row">
@@ -44,7 +44,7 @@
                                 <p>Telefono</p>
                             </div>
                             <div class="col">
-                                <p></p>
+                                <p>{{pacientes.telefono}}</p>
                             </div>
                         </div> 
                         <div class="row">
@@ -52,7 +52,7 @@
                                 <p>Dirección</p>
                             </div>
                             <div class="col">
-                                <p>}</p>
+                                <p>{{pacientes.direccion}}</p>
                             </div>
                         </div> 
                         <div class="row">
@@ -60,7 +60,7 @@
                                 <p>Correo</p>
                             </div>
                             <div class="col">
-                                <p></p>
+                                <p>{{pacientes.correo}}</p>
                             </div>
                         </div> 
                       <a class="btn btn-primary" routerLink="/editar">Editar</a>
@@ -150,7 +150,6 @@
                         <a id = "siguiente" class="card-title"><h5>{{ ejercicio.nombre }}</h5></a>
                         <p class="card-text">{{ejercicio.descripcion}}</p>
                         <p><b>Repeticiones:</b> {{ejercicio.repeticiones }} </p>
-                        <a [routerLink]="['/ingresar', ejercicio.id]" class="btn btn-primary" id="siguiente">Siguiente</a>
                         </div>
                     </div>
                 </div>
